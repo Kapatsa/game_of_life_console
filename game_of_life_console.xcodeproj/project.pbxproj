@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		23532BB9251F369E00F9903A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BB8251F369E00F9903A /* main.cpp */; };
+		23532BC1251F480400F9903A /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BBF251F480400F9903A /* cell.cpp */; };
+		23532BC4251F482600F9903A /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BC2251F482600F9903A /* field.cpp */; };
+		23532BC7251F488400F9903A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BC5251F488400F9903A /* game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		23532BB5251F369E00F9903A /* game_of_life_console */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = game_of_life_console; sourceTree = BUILT_PRODUCTS_DIR; };
 		23532BB8251F369E00F9903A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		23532BBF251F480400F9903A /* cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		23532BC0251F480400F9903A /* cell.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cell.hpp; sourceTree = "<group>"; };
+		23532BC2251F482600F9903A /* field.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = field.cpp; sourceTree = "<group>"; };
+		23532BC3251F482600F9903A /* field.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = field.hpp; sourceTree = "<group>"; };
+		23532BC5251F488400F9903A /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		23532BC6251F488400F9903A /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				23532BB8251F369E00F9903A /* main.cpp */,
+				23532BBF251F480400F9903A /* cell.cpp */,
+				23532BC0251F480400F9903A /* cell.hpp */,
+				23532BC2251F482600F9903A /* field.cpp */,
+				23532BC3251F482600F9903A /* field.hpp */,
+				23532BC5251F488400F9903A /* game.cpp */,
+				23532BC6251F488400F9903A /* game.hpp */,
 			);
 			path = game_of_life_console;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23532BC4251F482600F9903A /* field.cpp in Sources */,
 				23532BB9251F369E00F9903A /* main.cpp in Sources */,
+				23532BC1251F480400F9903A /* cell.cpp in Sources */,
+				23532BC7251F488400F9903A /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

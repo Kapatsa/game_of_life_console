@@ -1,24 +1,14 @@
 //
-//  main.cpp
+//  cell.hpp
 //  game_of_life_console
 //
 //  Created by David Kapatsa on 26.09.2020.
 //  Copyright © 2020 David Kapatsa. All rights reserved.
 //
 
-#include <iostream>
+#ifndef cell_hpp
+#define cell_hpp
 
-int main(int argc, const char * argv[]) {
+#include <stdio.h>
 
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    return 0;
-}
+#endif /* cell_hpp */
