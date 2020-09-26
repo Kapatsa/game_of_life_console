@@ -7,3 +7,25 @@
 //
 
 #include "cell.hpp"
+
+void Cell::setAlive(bool num){
+    alive = num;
+}
+bool Cell::getAlive(){
+    return alive;
+}
+void Cell::addNeighbor(){
+    ++numNeighbors;
+}
+int Cell::getNumNeighbors(){
+    return numNeighbors;
+}
+void Cell::print(){
+    if(alive == 1){
+        std::cout << "▮";
+    }
+    else {
+        std::cout << " ";
+    }
+}
+

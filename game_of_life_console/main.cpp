@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "field.hpp"
+#include "cell.hpp"
+#include "game.hpp"
 
 int main(int argc, const char * argv[]) {
-
+    
+    Field field(3, 3);
+    field.setFieldByHand();
+    field.print();
     
 
     

@@ -10,5 +10,18 @@
 #define cell_hpp
 
 #include <stdio.h>
+#include <iostream>
+
+class Cell {
+    bool alive;
+    int numNeighbors = 0;
+public:
+    void setAlive(bool num);
+    bool getAlive();
+    void addNeighbor();
+    int getNumNeighbors();
+    void print();
+};
+
 
 #endif /* cell_hpp */
