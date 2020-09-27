@@ -9,6 +9,12 @@
 #include "field.hpp"
 #include "functions.hpp"
 
+    Field::Field(){
+        cellArray = new Cell*[fieldHeight];
+        for(int i = 0; i < fieldHeight; ++i)
+            cellArray[i] = new Cell[fieldWidth];
+    }
+
     Field::Field(int fieldH, int fieldW){
         fieldHeight = fieldH;
         fieldWidth = fieldW;
@@ -16,6 +22,7 @@
         for(int i = 0; i < fieldHeight; ++i)
             cellArray[i] = new Cell[fieldWidth];
     }
+
     Field::~Field(){
         for(int i = 0; i < fieldHeight; ++i)
             delete [] cellArray[i];
@@ -33,6 +40,18 @@ void Field::setFieldByHand(){
         }
     }
 
+//TODO:: Include check for bounds of array
+void Field::setFieldByArray(bool** array){
+    bool temp;
+    for(int i = 0; i < fieldHeight; ++i){
+        for(int j = 0; j < fieldWidth; ++j){
+            temp = array[i][j];
+            cellArray[i][j].setAlive(temp);
+            if(temp == 1) addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
+        }
+    }
+}
+
 void Field::setFieldRandom(std::mt19937 generator, double prob){
     //TODO:: Check that prob parameter is inside the bounds (0;1)
     std::bernoulli_distribution d(prob);
@@ -42,6 +61,27 @@ void Field::setFieldRandom(std::mt19937 generator, double prob){
             temp = d(generator);
             cellArray[i][j].setAlive(temp);
             if(temp == 1) addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
+        }
+    }
+}
+
+void Field::iterateField(){
+    int temp;
+    for(int i = 0; i < fieldHeight; ++i){
+        for(int j = 0; j < fieldWidth; ++j){
+            temp = cellArray[i][j].getNumNeighbors();
+            if(cellArray[i][j].getAlive() == 1){
+                if( temp < 2 || temp > 3){
+                    cellArray[i][j].setAlive(0);
+                    removeNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
+                }
+            }
+            else {
+                if(temp == 3){
+                    cellArray[i][j].setAlive(1);
+                    addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
+                }
+            }
         }
     }
 }
@@ -56,6 +96,19 @@ void Field::print(){
             }
         std::cout << std::endl;
         }
+    std::cout << std::endl;
     }
+
+void Field::printNumNeighbors(){
+    for(int i = 0; i < fieldHeight; ++i){
+        std::cout << "║";
+        for(int j = 0; j < fieldWidth; ++j){
+            std::cout << cellArray[i][j].getNumNeighbors();
+            std::cout << "║";
+        }
+    std::cout << std::endl;
+    }
+std::cout << std::endl;
+}
 
 

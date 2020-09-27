@@ -10,5 +10,17 @@
 #define game_hpp
 
 #include <stdio.h>
+#include "field.hpp"
+#include <iostream>
+
+class Game {
+    Field* fieldPtr;
+    char typeOfPlayer;
+public:
+    Game();
+    void setGame();
+    void play();
+};
+
 
 #endif /* game_hpp */

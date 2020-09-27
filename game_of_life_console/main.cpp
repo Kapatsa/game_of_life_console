@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <random>
+#include <fstream>
 #include "field.hpp"
 #include "cell.hpp"
 #include "game.hpp"
@@ -17,6 +18,8 @@ int main(int argc, const char * argv[]) {
     std::random_device rd;
     std::mt19937 gen(rd());
     
+    Game game;
+    
     std::cout << R"(
       ___     _     __  __   ___      ___    ___     _      ___   ___   ___
      / __|   /_\   |  \/  | | __|    / _ \  | __|   | |    |_ _| | __| | __|
@@ -25,20 +28,9 @@ int main(int argc, const char * argv[]) {
     by David Kapatsa, 2020.
     )" << std::endl;
     
-    Field field(15, 35);
-    field.setFieldRandom(gen);
-    field.print();
-    
-    
-    
+    //TODO::Play again
+    game.setGame();
+    game.play();
 
-    
-    
-    
-    
-    
-    
-    
-    
     return 0;
 }

@@ -17,3 +17,4 @@
 #endif /* functions_hpp */
 
 void addNeighbors(Cell** cellArray, int height, int width, int i, int j);
+void removeNeighbors(Cell** cellArray, int height, int width, int i, int j);

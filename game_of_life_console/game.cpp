@@ -7,3 +7,9 @@
 //
 
 #include "game.hpp"
+
+//TODO:: These functions!
+void setGame();
+void play();
+
+

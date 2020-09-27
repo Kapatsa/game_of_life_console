@@ -10,20 +10,24 @@
 #define field_hpp
 
 #include <iostream>
-#include <array>
 #include "cell.hpp"
 #include <stdio.h>
 #include <random>
 
 class Field {
-    int fieldHeight;
-    int fieldWidth;
+    int fieldHeight = 20;
+    int fieldWidth = 30;
     Cell** cellArray;
+    //bool fieldtype - cyclic or finite
 public:
+    Field();
     Field(int fieldH, int fieldW);
     ~Field();
     void setFieldByHand();
-    void setFieldRandom(std::mt19937 generator, double prob = 0.1);
+    void setFieldByArray(bool** array);
+    void setFieldRandom(std::mt19937 generator, double prob = 0.2);
+    void iterateField();
+    void printNumNeighbors();
     void print();
 };
 
