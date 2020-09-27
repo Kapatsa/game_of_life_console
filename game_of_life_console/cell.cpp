@@ -17,15 +17,18 @@ bool Cell::getAlive(){
 void Cell::addNeighbor(){
     ++numNeighbors;
 }
+void Cell::removeNeighbor(){
+    --numNeighbors;
+}
 int Cell::getNumNeighbors(){
     return numNeighbors;
 }
 void Cell::print(){
     if(alive == 1){
-        std::cout << "▮";
+        std::cout << "██";
     }
     else {
-        std::cout << " ";
+        std::cout << "  ";
     }
 }
 

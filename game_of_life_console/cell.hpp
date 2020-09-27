@@ -19,6 +19,7 @@ public:
     void setAlive(bool num);
     bool getAlive();
     void addNeighbor();
+    void removeNeighbor();
     int getNumNeighbors();
     void print();
 };

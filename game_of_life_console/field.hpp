@@ -13,6 +13,7 @@
 #include <array>
 #include "cell.hpp"
 #include <stdio.h>
+#include <random>
 
 class Field {
     int fieldHeight;
@@ -22,6 +23,7 @@ public:
     Field(int fieldH, int fieldW);
     ~Field();
     void setFieldByHand();
+    void setFieldRandom(std::mt19937 generator, double prob = 0.1);
     void print();
 };
 

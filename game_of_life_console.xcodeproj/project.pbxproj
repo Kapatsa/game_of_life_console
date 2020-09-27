@@ -11,6 +11,7 @@
 		23532BC1251F480400F9903A /* cell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BBF251F480400F9903A /* cell.cpp */; };
 		23532BC4251F482600F9903A /* field.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BC2251F482600F9903A /* field.cpp */; };
 		23532BC7251F488400F9903A /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BC5251F488400F9903A /* game.cpp */; };
+		23532BCA2520725F00F9903A /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23532BC82520725F00F9903A /* functions.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		23532BC3251F482600F9903A /* field.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = field.hpp; sourceTree = "<group>"; };
 		23532BC5251F488400F9903A /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
 		23532BC6251F488400F9903A /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		23532BC82520725F00F9903A /* functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		23532BC92520725F00F9903A /* functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = functions.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				23532BC3251F482600F9903A /* field.hpp */,
 				23532BC5251F488400F9903A /* game.cpp */,
 				23532BC6251F488400F9903A /* game.hpp */,
+				23532BC82520725F00F9903A /* functions.cpp */,
+				23532BC92520725F00F9903A /* functions.hpp */,
 			);
 			path = game_of_life_console;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			files = (
 				23532BC4251F482600F9903A /* field.cpp in Sources */,
 				23532BB9251F369E00F9903A /* main.cpp in Sources */,
+				23532BCA2520725F00F9903A /* functions.cpp in Sources */,
 				23532BC1251F480400F9903A /* cell.cpp in Sources */,
 				23532BC7251F488400F9903A /* game.cpp in Sources */,
 			);
