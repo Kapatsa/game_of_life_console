@@ -38,6 +38,7 @@ void Field::setFieldByHand(){
                 if(temp == 1) addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
             }
         }
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
     }
 
 //TODO:: Include check for bounds of array
@@ -67,21 +68,27 @@ void Field::setFieldRandom(std::mt19937 generator, double prob){
 
 void Field::iterateField(){
     int temp;
+    
     for(int i = 0; i < fieldHeight; ++i){
         for(int j = 0; j < fieldWidth; ++j){
             temp = cellArray[i][j].getNumNeighbors();
             if(cellArray[i][j].getAlive() == 1){
-                if( temp < 2 || temp > 3){
+                if(temp < 2 || temp > 3){
                     cellArray[i][j].setAlive(0);
-                    removeNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
                 }
             }
             else {
                 if(temp == 3){
                     cellArray[i][j].setAlive(1);
-                    addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
                 }
             }
+            cellArray[i][j].setNumNeighbors(0);
+        }
+    }
+//calculating the number of neighbors again
+    for(int i = 0; i < fieldHeight; ++i){
+        for(int j = 0; j < fieldWidth; ++j){
+            if(cellArray[i][j].getAlive() == 1) addNeighbors(cellArray, fieldHeight, fieldWidth, i, j);
         }
     }
 }

@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
     std::random_device rd;
     std::mt19937 gen(rd());
     
-    Game game;
+    Game game(gen);
     
     std::cout << R"(
       ___     _     __  __   ___      ___    ___     _      ___   ___   ___
@@ -28,9 +28,15 @@ int main(int argc, const char * argv[]) {
     by David Kapatsa, 2020.
     )" << std::endl;
     
-    //TODO::Play again
-    game.setGame();
-    game.play();
+    while (1) {
+        game.setGame();
+        game.play();
+        
+        std::cout << "again? (y/n): ";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+        if (std::cin.get() != 'y') break;
+    }
+    
 
     return 0;
 }

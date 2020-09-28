@@ -23,6 +23,9 @@ void Cell::removeNeighbor(){
 int Cell::getNumNeighbors(){
     return numNeighbors;
 }
+void Cell::setNumNeighbors(int num){
+    numNeighbors = num;
+}
 void Cell::print(){
     if(alive == 1){
         std::cout << "██";

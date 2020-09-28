@@ -15,9 +15,10 @@
 
 class Game {
     Field* fieldPtr;
-    char typeOfPlayer;
+    char typeOfGame;
+    std::mt19937 generator;
 public:
-    Game();
+    Game(std::mt19937 gen);
     void setGame();
     void play();
 };

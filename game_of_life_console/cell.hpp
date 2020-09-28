@@ -21,6 +21,7 @@ public:
     void addNeighbor();
     void removeNeighbor();
     int getNumNeighbors();
+    void setNumNeighbors(int num);
     void print();
 };
 
