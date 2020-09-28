@@ -1,0 +1,77 @@
+\hypertarget{class_cell}{}\doxysection{Cell Class Reference}
+\label{class_cell}\index{Cell@{Cell}}
+
+
+{\ttfamily \#include $<$cell.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cell_a44562c19a1181deeef87b71d2e7e3ce5}{set\+Alive}} (bool num)
+\item 
+bool \mbox{\hyperlink{class_cell_a8ec47d8d52e1341e6f7ca9a2be06d4a7}{get\+Alive}} ()
+\item 
+void \mbox{\hyperlink{class_cell_a45af1490bfbc2f3fcfb97c485cfb2a66}{add\+Neighbor}} ()
+\item 
+void \mbox{\hyperlink{class_cell_a4818c0677d8820af974a68c955305d5b}{remove\+Neighbor}} ()
+\item 
+int \mbox{\hyperlink{class_cell_ae628324c9c597b8104d1e322b1284f81}{get\+Num\+Neighbors}} ()
+\item 
+void \mbox{\hyperlink{class_cell_a118feeb137ed36ce15518d1a7c35aa4c}{set\+Num\+Neighbors}} (int num)
+\item 
+void \mbox{\hyperlink{class_cell_ad85f38ac8740c33451866c8af37b8240}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a cell in a field, where the game is set. The cell can be alive or not. Another attribute is the number of neighbors which is used by the algorithm. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cell_a45af1490bfbc2f3fcfb97c485cfb2a66}\label{class_cell_a45af1490bfbc2f3fcfb97c485cfb2a66}} 
+\index{Cell@{Cell}!addNeighbor@{addNeighbor}}
+\index{addNeighbor@{addNeighbor}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{addNeighbor()}{addNeighbor()}}
+{\footnotesize\ttfamily void Cell\+::add\+Neighbor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method simply adds one to the number of neighbors it has \mbox{\Hypertarget{class_cell_a8ec47d8d52e1341e6f7ca9a2be06d4a7}\label{class_cell_a8ec47d8d52e1341e6f7ca9a2be06d4a7}} 
+\index{Cell@{Cell}!getAlive@{getAlive}}
+\index{getAlive@{getAlive}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getAlive()}{getAlive()}}
+{\footnotesize\ttfamily bool Cell\+::get\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method gets a status of a cell \mbox{\Hypertarget{class_cell_ae628324c9c597b8104d1e322b1284f81}\label{class_cell_ae628324c9c597b8104d1e322b1284f81}} 
+\index{Cell@{Cell}!getNumNeighbors@{getNumNeighbors}}
+\index{getNumNeighbors@{getNumNeighbors}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{getNumNeighbors()}{getNumNeighbors()}}
+{\footnotesize\ttfamily int Cell\+::get\+Num\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the current number of neighbors \mbox{\Hypertarget{class_cell_ad85f38ac8740c33451866c8af37b8240}\label{class_cell_ad85f38ac8740c33451866c8af37b8240}} 
+\index{Cell@{Cell}!print@{print}}
+\index{print@{print}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Cell\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints a single cell \mbox{\Hypertarget{class_cell_a4818c0677d8820af974a68c955305d5b}\label{class_cell_a4818c0677d8820af974a68c955305d5b}} 
+\index{Cell@{Cell}!removeNeighbor@{removeNeighbor}}
+\index{removeNeighbor@{removeNeighbor}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{removeNeighbor()}{removeNeighbor()}}
+{\footnotesize\ttfamily void Cell\+::remove\+Neighbor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method simply removes one from the number of neighbors it has \mbox{\Hypertarget{class_cell_a44562c19a1181deeef87b71d2e7e3ce5}\label{class_cell_a44562c19a1181deeef87b71d2e7e3ce5}} 
+\index{Cell@{Cell}!setAlive@{setAlive}}
+\index{setAlive@{setAlive}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setAlive()}{setAlive()}}
+{\footnotesize\ttfamily void Cell\+::set\+Alive (\begin{DoxyParamCaption}\item[{bool}]{num }\end{DoxyParamCaption})}
+
+This method helps set a cell to be alive or dead \mbox{\Hypertarget{class_cell_a118feeb137ed36ce15518d1a7c35aa4c}\label{class_cell_a118feeb137ed36ce15518d1a7c35aa4c}} 
+\index{Cell@{Cell}!setNumNeighbors@{setNumNeighbors}}
+\index{setNumNeighbors@{setNumNeighbors}!Cell@{Cell}}
+\doxysubsubsection{\texorpdfstring{setNumNeighbors()}{setNumNeighbors()}}
+{\footnotesize\ttfamily void Cell\+::set\+Num\+Neighbors (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+Sets the number of neighbors 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cell.\+hpp\item 
+cell.\+cpp\end{DoxyCompactItemize}

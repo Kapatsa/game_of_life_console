@@ -1,0 +1,101 @@
+\hypertarget{class_field}{}\doxysection{Field Class Reference}
+\label{class_field}\index{Field@{Field}}
+
+
+{\ttfamily \#include $<$field.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field}} ()
+\item 
+\mbox{\hyperlink{class_field_af5a3a9b7d72d9699927a5d6782854915}{Field}} (int fieldH, int fieldW)
+\item 
+\mbox{\hyperlink{class_field_a45d6e6d09b8f8e46de62b40119d62c60}{$\sim$\+Field}} ()
+\item 
+void \mbox{\hyperlink{class_field_ad77d57c71b640cfd2c2fa965aa472830}{set\+Field\+By\+Hand}} ()
+\item 
+void \mbox{\hyperlink{class_field_a58b55fc7d1ae0f80c29b51179c53d084}{set\+Field\+By\+Array}} (bool $\ast$$\ast$array)
+\item 
+void \mbox{\hyperlink{class_field_a4a3b982a289e84f2e80bb969c88c4d62}{set\+Field\+Random}} (std\+::mt19937 generator, double prob=0.\+2)
+\item 
+void \mbox{\hyperlink{class_field_a94f8477f6c1c2d3928bb76bf2748ba82}{iterate\+Field}} ()
+\item 
+void \mbox{\hyperlink{class_field_a815742b551052e0c586bcae6562feb6b}{print\+Num\+Neighbors}} ()
+\item 
+void \mbox{\hyperlink{class_field_a969c08bc0d7ab0a322e80fcae8b072f1}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class describes a field for the game, including all of its cells 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_field_a3e804c92273d9159f413f227b535c672}\label{class_field_a3e804c92273d9159f413f227b535c672}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{class_field_af5a3a9b7d72d9699927a5d6782854915}\label{class_field_af5a3a9b7d72d9699927a5d6782854915}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}\item[{int}]{fieldH,  }\item[{int}]{fieldW }\end{DoxyParamCaption})}
+
+Constructor, which sets the size of field \mbox{\Hypertarget{class_field_a45d6e6d09b8f8e46de62b40119d62c60}\label{class_field_a45d6e6d09b8f8e46de62b40119d62c60}} 
+\index{Field@{Field}!````~Field@{$\sim$Field}}
+\index{````~Field@{$\sim$Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{$\sim$Field()}{~Field()}}
+{\footnotesize\ttfamily Field\+::$\sim$\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor that frees the memory from cell\+Array 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_field_a94f8477f6c1c2d3928bb76bf2748ba82}\label{class_field_a94f8477f6c1c2d3928bb76bf2748ba82}} 
+\index{Field@{Field}!iterateField@{iterateField}}
+\index{iterateField@{iterateField}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{iterateField()}{iterateField()}}
+{\footnotesize\ttfamily void Field\+::iterate\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Using the current field setup and neighbors count, changes the field to produce the next generation of the automata \mbox{\Hypertarget{class_field_a969c08bc0d7ab0a322e80fcae8b072f1}\label{class_field_a969c08bc0d7ab0a322e80fcae8b072f1}} 
+\index{Field@{Field}!print@{print}}
+\index{print@{print}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Field\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Console output of the current iteration of the field. \mbox{\Hypertarget{class_field_a815742b551052e0c586bcae6562feb6b}\label{class_field_a815742b551052e0c586bcae6562feb6b}} 
+\index{Field@{Field}!printNumNeighbors@{printNumNeighbors}}
+\index{printNumNeighbors@{printNumNeighbors}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{printNumNeighbors()}{printNumNeighbors()}}
+{\footnotesize\ttfamily void Field\+::print\+Num\+Neighbors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Console output of the number of neighbors for each cell. Made mostly for debugging purposes. \mbox{\Hypertarget{class_field_a58b55fc7d1ae0f80c29b51179c53d084}\label{class_field_a58b55fc7d1ae0f80c29b51179c53d084}} 
+\index{Field@{Field}!setFieldByArray@{setFieldByArray}}
+\index{setFieldByArray@{setFieldByArray}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setFieldByArray()}{setFieldByArray()}}
+{\footnotesize\ttfamily void Field\+::set\+Field\+By\+Array (\begin{DoxyParamCaption}\item[{bool $\ast$$\ast$}]{array }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_field}{Field}} setting using existing array \mbox{\Hypertarget{class_field_ad77d57c71b640cfd2c2fa965aa472830}\label{class_field_ad77d57c71b640cfd2c2fa965aa472830}} 
+\index{Field@{Field}!setFieldByHand@{setFieldByHand}}
+\index{setFieldByHand@{setFieldByHand}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setFieldByHand()}{setFieldByHand()}}
+{\footnotesize\ttfamily void Field\+::set\+Field\+By\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_field}{Field}} setting using console input \mbox{\Hypertarget{class_field_a4a3b982a289e84f2e80bb969c88c4d62}\label{class_field_a4a3b982a289e84f2e80bb969c88c4d62}} 
+\index{Field@{Field}!setFieldRandom@{setFieldRandom}}
+\index{setFieldRandom@{setFieldRandom}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setFieldRandom()}{setFieldRandom()}}
+{\footnotesize\ttfamily void Field\+::set\+Field\+Random (\begin{DoxyParamCaption}\item[{std\+::mt19937}]{generator,  }\item[{double}]{prob = {\ttfamily 0.2} }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_field}{Field}} setting using random generator.
+\begin{DoxyParams}{Parameters}
+{\em prob} & sets probability for life in a single cell \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+field.\+hpp\item 
+field.\+cpp\end{DoxyCompactItemize}
