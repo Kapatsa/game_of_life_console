@@ -16,5 +16,11 @@
 
 #endif /* functions_hpp */
 
+/**
+*This function adds to the number of neighbors to the cells in the vicinity
+*/
 void addNeighbors(Cell** cellArray, int height, int width, int i, int j);
+/**
+*This function subtracts one from the number of neighbors of all the cells in the vicinity
+*/
 void removeNeighbors(Cell** cellArray, int height, int width, int i, int j);

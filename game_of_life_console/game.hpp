@@ -13,13 +13,25 @@
 #include "field.hpp"
 #include <iostream>
 
+/**
+*Class made for the initial setup of the field and actual gameplay
+*/
 class Game {
     Field* fieldPtr;
     char typeOfGame;
     std::mt19937 generator;
 public:
+    /**
+    *Default constructor, needs a random number generator for cell field generation
+    */
     Game(std::mt19937 gen);
+    /**
+    *Initial setup of the game
+    */
     void setGame();
+    /**
+    *Actual gameplay with exit
+    */
     void play();
 };
 

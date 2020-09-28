@@ -37,6 +37,5 @@ int main(int argc, const char * argv[]) {
         if (std::cin.get() != 'y') break;
     }
     
-
     return 0;
 }
